@@ -1,22 +1,13 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-  background-color:  whitesmoke;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+body {
+    background-color: whitesmoke;
+    line-height: 1.5;
 }
 
 /*header*/
@@ -35,13 +26,8 @@ h1 {
   display: inline-block;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
 nav {
-  background-color: 212b42;
+  background-color: #212b42;
   padding-top: 10px;
   margin-right: 30px;
   float: right;
@@ -49,7 +35,7 @@ nav {
   font-size: 20px;
 }
 
-nav ul {
+ul {
   list-style-type: none;
 }
 
@@ -57,6 +43,7 @@ nav ul li {
   color: #93cede;
   display: inline-block;
   margin-left: 25px;
+  margin-top: 33px;
   text-decoration: underline;
 }
 
@@ -105,14 +92,106 @@ main {
 }
 
 .page-section {
-    display: inline-flex;
+    display: flex;
+    align-items: stretch;
 }
 
 .header {
     margin: 5px;
+    padding: 5px;
+    width: 300px;
     border-right: #212b42 solid;
     color: #212b42;
+    text-align: right;
+    justify-content: flex-end;
 }
+
+.info {
+    width: 1100px;
+}
+
+.contact-info-list {
+    display: inline-flex;
+    list-style: none;
+    gap: 10%;
+    text-decoration: underline;
+}
+
+.about-header {
+text-align: left;
+}
+
+/*
+.contact-info-list li {
+    margin: 80px 50px 50px 30px;
+} */
+
+/*GRID*/
+
+#work-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: 
+    "grid-img1 grid-img1"
+    "grid-img2 grid-img3"
+    "grid-img4 grid-img5";
+    gap: 10px;
+}
+
+#grid-img1 {
+    grid-area: grid-img1;
+    background-image: url(../images/02-portfolio-2.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1100px;
+    height: 270px;
+    border: #235a69 solid;
+    margin: 10px;
+}
+#grid-img2, #grid-img3, #grid-img4, #grid-img5 {
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #235a69 solid;
+    width: 545px;
+    height: 120px;
+}
+
+#grid-img2 {
+    grid-area: grid-img2;
+    background-image: url(../images/02-portfolio-1.jpg);
+    margin: 0 0 10px 10px;
+}
+
+#grid-img3 {
+    grid-area: grid-img3;
+    background-image: url(../images/02-portfolio-3.jpg);
+    margin: 0 0 10px -5px;
+}
+
+#grid-img4 {
+    grid-area: grid-img4;
+    background-image: url(../images/02-portfolio-4.jpg);
+    margin: -20px 0 10px 10px;
+}
+
+#grid-img5 {
+    grid-area: grid-img5;
+    background-image: url(../images/Horiseon_wabpage.png);
+    margin: -20px 0 10px -5px;
+}
+
+/*END of GRID*/
+
+
+
+
+
+
+
+
 
 
     /*
