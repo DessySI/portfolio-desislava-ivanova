@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color:  whitesmoke;
 }
 
 h1,
@@ -18,6 +19,133 @@ h6 {
   margin: 0;
 }
 
+/*header*/
+
+header {
+  background-color: #212b42;
+}
+
+h1 {
+  background-color: #93cede;
+  color: 212b42;
+  font-size: 35px;
+  margin: 15px 15px 15px 0px;
+  padding-right: 15px;
+  padding-left: 45px;
+  display: inline-block;
+}
+
 p {
   margin: 0;
+  padding: 0;
 }
+
+nav {
+  background-color: 212b42;
+  padding-top: 10px;
+  margin-right: 30px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  color: #93cede;
+  display: inline-block;
+  margin-left: 25px;
+  text-decoration: underline;
+}
+
+li a {
+  color: #93cede;
+  text-decoration: underline;
+}
+
+li:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px #93cede, 0 0 5px #235a69;
+  color: #93cede;
+  text-decoration: none;
+}
+
+/*end of header*/
+
+/*hero section*/
+
+.hero-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/02-hero-bg.jpg);
+  position: relative;
+  height: 200px;
+}
+
+.hero-banner h2 {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  background-color: #93cede;
+  color: 212b42;
+  padding: 0 5px 0 5px;
+  font-size: 30px;
+ }
+
+ /*end of hero section*/
+
+
+ /*main section -grid*/
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10% 0 10%;
+}
+
+.page-section {
+    display: inline-flex;
+}
+
+.header {
+    margin: 5px;
+    border-right: #212b42 solid;
+    color: #212b42;
+}
+
+
+    /*
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: none
+    "about-h about-i"
+    "work-h work-i"
+    "contact-h contact-i";
+ }
+
+.about-header {
+    grid-area: about-h;
+ }
+
+.work-header {
+    grid-area: work-h;
+ }
+
+.contact-header {
+    grid-area: contact-h;
+ }
+
+.about-info {
+    grid-area: about-i;
+ }
+
+.work-info {
+    grid-area: work-i;
+ }
+
+.contact-info {
+    grid-area: contact-i;
+ }
+
+ */
