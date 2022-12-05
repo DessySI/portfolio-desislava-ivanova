@@ -39,7 +39,7 @@ ul {
   list-style-type: none;
 }
 
-nav ul li {
+ul li {
   color: #93cede;
   display: inline-block;
   margin-left: 25px;
@@ -57,6 +57,7 @@ li:hover {
   color: #93cede;
   text-decoration: none;
 }
+
 
 /*end of header*/
 
@@ -89,36 +90,57 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0 10% 0 10%;
+
 }
 
 .page-section {
     display: flex;
-    align-items: stretch;
+    text-align: right;
 }
 
 .header {
-    margin: 5px;
-    padding: 5px;
-    width: 300px;
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+    width: 1fr;
     border-right: #212b42 solid;
     color: #212b42;
     text-align: right;
-    justify-content: flex-end;
 }
 
 .info {
-    width: 1100px;
+    width: 3fr;
+    height: fit-content;
+}
+
+h3{
+   display: inline-block;
+   border: solid;
+   background-color:  #93cede;
+}
+
+p {
+    text-align: justify;
 }
 
 .contact-info-list {
-    display: inline-flex;
+    position: relative;
     list-style: none;
-    gap: 10%;
-    text-decoration: underline;
+    color: #212b42;
 }
 
-.about-header {
-text-align: left;
+li a {
+    color: #212b42;
+    font-size: 20px;
+    background-color: #93cede;
+    border-bottom: #212b42;
+    padding: 10px;
+}
+
+.header h2 {
+    margin: 5px;
+    width: 100px;
+    font-size: 30px;
 }
 
 /*
@@ -130,13 +152,14 @@ text-align: left;
 
 #work-info {
     display: grid;
+    width: 1800px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 25% 25%;
+    grid-template-rows: 3fr 1fr 1fr;
     grid-template-areas: 
     "grid-img1 grid-img1"
     "grid-img2 grid-img3"
     "grid-img4 grid-img5";
-    gap: 10px;
+    gap: 5px;
 }
 
 #grid-img1 {
@@ -145,42 +168,43 @@ text-align: left;
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1100px;
-    height: 270px;
+    min-width: 600px;
+    height: 300px;
     border: #235a69 solid;
-    margin: 10px;
+    margin-top: 20px;
 }
+
+
 #grid-img2, #grid-img3, #grid-img4, #grid-img5 {
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     border: #235a69 solid;
-    width: 545px;
-    height: 120px;
+
+}
+
+#grid-img4, #grid-img5 {
+    margin-bottom: 20px;
 }
 
 #grid-img2 {
     grid-area: grid-img2;
     background-image: url(../images/02-portfolio-1.jpg);
-    margin: 0 0 10px 10px;
 }
 
 #grid-img3 {
     grid-area: grid-img3;
     background-image: url(../images/02-portfolio-3.jpg);
-    margin: 0 0 10px -5px;
 }
 
 #grid-img4 {
     grid-area: grid-img4;
     background-image: url(../images/02-portfolio-4.jpg);
-    margin: -20px 0 10px 10px;
 }
 
 #grid-img5 {
     grid-area: grid-img5;
     background-image: url(../images/Horiseon_wabpage.png);
-    margin: -20px 0 10px -5px;
 }
 
 /*END of GRID*/
