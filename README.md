@@ -12,7 +12,7 @@ This is a draft version of my portfolio. So far you can find only one applicatio
 
 To use this website, you can use the navigation on the top left corner and find links and information about my phone number, skype, facebook, linkedin, etc.
 
-![photo of the app](Portfolio-Desislava-Ivanov.jpg)
+![app-photo](Portfolio-Desislava-Ivanov.jpg)
 
 ## Credits
 
