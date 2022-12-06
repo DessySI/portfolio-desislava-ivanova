@@ -6,18 +6,18 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #EEEEF7;
     line-height: 1.5;
 }
 
 /*header*/
 
 header {
-  background-color: #212b42;
+  background-color: #32343D;
 }
 
 h1 {
-  background-color: #93cede;
+  background-color: #92CBCE;
   color: 212b42;
   font-size: 35px;
   margin: 15px 15px 15px 0px;
@@ -27,7 +27,7 @@ h1 {
 }
 
 nav {
-  background-color: #212b42;
+  background-color: #32343D;
   padding-top: 10px;
   margin-right: 30px;
   float: right;
@@ -35,29 +35,41 @@ nav {
   font-size: 20px;
 }
 
+
+
 ul {
   list-style-type: none;
 }
 
 ul li {
-  color: #93cede;
   display: inline-block;
   margin-left: 25px;
-  margin-top: 33px;
-  text-decoration: underline;
+  margin-top: 20px;
+  border-bottom-style: groove;
+  border-color: #92CBCE;
 }
+
 
 li a {
-  color: #93cede;
-  text-decoration: underline;
+  border-bottom: 1px #EEEEF7;
+  font-size: 20px;
+  padding: 10px;
 }
+
+a {
+    text-decoration: none;
+    color: #92CBCE;
+}
+
 
 li:hover {
-  text-shadow: 1px 1px 2px black, 0 0 25px #93cede, 0 0 5px #235a69;
-  color: #93cede;
-  text-decoration: none;
+  text-shadow: 1px 1px 2px black, 0 0 25px #92CBCE, 0 0 5px #235a69;
+  color:#92CBCE;
 }
 
+nav::after {
+    clear: both;
+}
 
 /*end of header*/
 
@@ -76,7 +88,7 @@ li:hover {
   position: absolute;
   right: 10%;
   bottom: 10%;
-  background-color: #93cede;
+  background-color: #92CBCE;
   color: 212b42;
   padding: 0 5px 0 5px;
   font-size: 30px;
@@ -85,7 +97,7 @@ li:hover {
  /*end of hero section*/
 
 
- /*main section -grid*/
+ /*main section -flex*/
 main {
     display: flex;
     flex-direction: column;
@@ -103,9 +115,9 @@ main {
     margin: 15px;
     padding: 10px;
     width: 1fr;
-    border-right: #212b42 solid;
-    color: #212b42;
+    color: #32343D;
     text-align: right;
+    border-right: solid #32343D;
 }
 
 .info {
@@ -113,28 +125,8 @@ main {
     height: fit-content;
 }
 
-h3{
-   display: inline-block;
-   border: solid;
-   background-color:  #93cede;
-}
-
 p {
     text-align: justify;
-}
-
-.contact-info-list {
-    position: relative;
-    list-style: none;
-    color: #212b42;
-}
-
-li a {
-    color: #212b42;
-    font-size: 20px;
-    background-color: #93cede;
-    border-bottom: #212b42;
-    padding: 10px;
 }
 
 .header h2 {
@@ -143,22 +135,18 @@ li a {
     font-size: 30px;
 }
 
-/*
-.contact-info-list li {
-    margin: 80px 50px 50px 30px;
-} */
-
-/*GRID*/
+/*work section - grid -start*/
 
 #work-info {
     display: grid;
     width: 1800px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 2.4fr 1fr 1fr;
     grid-template-areas: 
     "grid-img1 grid-img1"
     "grid-img2 grid-img3"
     "grid-img4 grid-img5";
+    margin: 20px 0 20px 0;
     gap: 5px;
 }
 
@@ -170,22 +158,33 @@ li a {
     background-size: cover;
     min-width: 600px;
     height: 300px;
-    border: #235a69 solid;
-    margin-top: 20px;
+    border: #92CBCE solid;
 }
 
+#grid-img1 h3 {
+    margin-top: 215px;
+    text-align: left;
+    width: 160px;
+}
 
 #grid-img2, #grid-img3, #grid-img4, #grid-img5 {
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: #235a69 solid;
-
+    border: #92CBCE solid;
 }
 
-#grid-img4, #grid-img5 {
-    margin-bottom: 20px;
-}
+#grid-img2 h3, #grid-img3 h3, #grid-img4 h3, #grid-img5 h3 {
+    margin-top: 40px;
+    text-align: left;
+    width: 160px;
+} 
+
+#grid-img5 h3 {
+    margin-top: 72px;
+    text-align: left;
+    width: 120px;
+} 
 
 #grid-img2 {
     grid-area: grid-img2;
@@ -207,48 +206,76 @@ li a {
     background-image: url(../images/Horiseon_wabpage.png);
 }
 
-/*END of GRID*/
+a h3 {
+    font-size: 20px;
+    position: absolute;
+    background-color: #92CBCE;
+    padding: 0 5px 0 5px;
+    margin-top: 35px;
+    color: #32343D;
+  }
+
+
+/*work section - grid - end*/
+
+/*footer*/
+
+footer ul {
+   margin: 40px 0 0 5%;
+}
 
 
 
+/*footer - end*/
+  
+/*screen-fit*/
 
+@media only screen and (max-width: 1000px) {
 
+    header nav {
+        margin-left: auto;
+    }
+  }
 
+@media only screen and (max-width: 600px) {
+    header {
+        position: static;
+        display: inline-block;
+        width: 100%;
+    }
 
+    #work-info {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+      "grid-img1"
+      "grid-img1"
+      "grid-img2" 
+      "grid-img3"
+      "grid-img4" 
+      "grid-img5";
+      height: fit-content;
+    }
 
+    p {
+        width: fit-content;
+    }
 
+    footer {
+        display: inline-flex;
+    }
 
-    /*
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 20% 70% 10%;
-    grid-template-areas: none
-    "about-h about-i"
-    "work-h work-i"
-    "contact-h contact-i";
+    #grid-img1 h3, #grid-img2 h3, #grid-img3 h3, #grid-img4 h3, #grid-img5 h3 {
+        margin: auto;
+    }
+
+    #grid-img1 {
+       height: 200px;
+       width: 100px;
+  }
+
+  footer ul {
+    margin: auto;
  }
 
-.about-header {
-    grid-area: about-h;
- }
-
-.work-header {
-    grid-area: work-h;
- }
-
-.contact-header {
-    grid-area: contact-h;
- }
-
-.about-info {
-    grid-area: about-i;
- }
-
-.work-info {
-    grid-area: work-i;
- }
-
-.contact-info {
-    grid-area: contact-i;
- }
-
- */
+}
