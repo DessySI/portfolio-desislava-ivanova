@@ -198,6 +198,7 @@ p {
 #grid-img5 {
     grid-area: grid-img5;
     background-image: url(../images/Horiseon_wabpage.png);
+    z-index: 50;
 }
 
 a h3 {
