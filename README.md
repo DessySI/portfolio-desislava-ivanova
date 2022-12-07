@@ -10,7 +10,7 @@ This is a draft version of my portfolio. So far you can find only one applicatio
 
 ## Usage
 
-To use this website, you can use the navigation on the top left corner and find links and information about me, my work, my phone number, skype, facebook, linkedin, etc.
+To use this website, you can use the navigation on the top left corner and find links and information about me, my work, my phone number, skype, facebook, linkedin, email.
 
 ![alt text](assets/images/Portfolio-Desislava-Ivanov.jpg)
 
