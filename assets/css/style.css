@@ -180,12 +180,6 @@ p {
     width: 160px;
 } 
 
-#grid-img5 h3 {
-    margin-top: 72px;
-    text-align: left;
-    width: 120px;
-} 
-
 #grid-img2 {
     grid-area: grid-img2;
     background-image: url(../images/02-portfolio-1.jpg);
@@ -261,10 +255,6 @@ footer ul {
         width: fit-content;
     }
 
-    footer {
-        display: inline-flex;
-    }
-
     #grid-img1 h3, #grid-img2 h3, #grid-img3 h3, #grid-img4 h3, #grid-img5 h3 {
         margin: auto;
     }
@@ -272,10 +262,13 @@ footer ul {
     #grid-img1 {
        height: 200px;
        width: 100px;
-  }
+    }
+  
+    footer {
+       display: inline-flex;
+    }
 
-  footer ul {
-    margin: auto;
- }
+    footer ul {
+       margin: auto;
+    }
 
-}
